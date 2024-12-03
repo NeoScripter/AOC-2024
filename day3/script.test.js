@@ -1,14 +1,14 @@
-const { main } = require('./script');
+const { part2 } = require('./script');
 
 const path = require("path");
 const fs = require("fs");
 
 const input = fs
-	.readFileSync(path.join(__dirname, 'input.txt'), 'utf8');
+	.readFileSync(path.join(__dirname, 'test.txt'), 'utf8');
 
 
-test('Part 2 test', () => {
-    expect(main(input)).toBe(356);
+test('Part 1 test', () => {
+    expect(part2(input)).toBe(48);
 })
 
 /* test('check line 1', () => {
